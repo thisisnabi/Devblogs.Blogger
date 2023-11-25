@@ -1,7 +1,4 @@
-﻿using Devblogs.Blogger.Domain.Common;
-using FluentAssertions;
-
-namespace Devblogs.Blogger.UnitTests.BuildingBlocks;
+﻿namespace Devblogs.Blogger.UnitTests.BuildingBlocks;
 
 public class ValueObjectTests
 {
