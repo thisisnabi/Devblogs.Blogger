@@ -1,5 +1,5 @@
 ﻿using System.Collections.Immutable;
-namespace Devblogs.Blogger.Domain.Common;
+namespace Devblogs.Blogger.Domain.BuildingBlocks;
 
 public abstract class AggregateRoot<TKey> : EntityBase<TKey>, IAggregateRoot
     where TKey : struct

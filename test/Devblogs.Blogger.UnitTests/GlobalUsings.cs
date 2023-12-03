@@ -4,4 +4,4 @@ global using Xunit;
 global using FluentAssertions;
 
 // project
-global using Devblogs.Blogger.Domain.Common;
+global using Devblogs.Blogger.Domain.BuildingBlocks;

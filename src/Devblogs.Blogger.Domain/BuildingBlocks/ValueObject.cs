@@ -1,4 +1,4 @@
-﻿namespace Devblogs.Blogger.Domain.Common;
+﻿namespace Devblogs.Blogger.Domain.BuildingBlocks;
 
 public abstract class ValueObject
 {
