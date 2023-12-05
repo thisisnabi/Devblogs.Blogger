@@ -14,7 +14,7 @@ public abstract class EntityBase<TKey>
         return GetType() == entity.GetType() &&
                EqualityComparer<TKey>.Default.Equals(Id, entity.Id);
     }
-
+     
     public override int GetHashCode()
     {
         return HashCode.Combine(GetType(), Id);
@@ -22,7 +22,7 @@ public abstract class EntityBase<TKey>
 
     public static bool operator ==(EntityBase<TKey> leftEntity, EntityBase<TKey> rightEntity)
     {
-        return EqualityComparer<EntityBase<TKey>>.Default.Equals(leftEntity, rightEntity);
+        return leftEntity.Equals(rightEntity);
     }
 
     public static bool operator !=(EntityBase<TKey> leftEntity, EntityBase<TKey> rightEntity)

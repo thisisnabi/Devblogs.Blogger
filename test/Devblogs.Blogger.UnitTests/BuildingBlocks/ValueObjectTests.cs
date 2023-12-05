@@ -11,6 +11,8 @@ public class ValueObjectTests
 
         // Act & Assert
         valueObject1.Should().Be(valueObject2);
+        (valueObject1 == valueObject2).Should().BeTrue();
+
     }
 
     [Fact]
@@ -22,6 +24,7 @@ public class ValueObjectTests
 
         // Act & Assert
         valueObject1.Should().NotBe(valueObject2);
+        (valueObject1 != valueObject2).Should().BeTrue();
     }
 
     [Fact]
@@ -45,6 +48,19 @@ public class ValueObjectTests
         // Act & Assert
         valueObject1.GetHashCode().Should().NotBe(valueObject2.GetHashCode());
     }
+
+    [Fact]
+    public void WithDifferentValuesHaveDifferentHashCode1()
+    {
+        // Arrange
+        TestValueObject valueObject1 = null;
+        TestValueObject valueObject2 = null;
+
+        // Act & Assert
+        (valueObject1 == valueObject2).Should().BeTrue();
+    }
+
+
 }
 
 
